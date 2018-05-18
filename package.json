@@ -1,0 +1,23 @@
+{
+  "name": "commit-standard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "release": "standard-version",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^6.2.0",
+    "commitlint-config-cz": "^0.8.0",
+    "husky": "^1.0.0-rc.6",
+    "standard-version": "^4.3.0"
+  }
+}
